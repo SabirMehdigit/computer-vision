@@ -8,8 +8,8 @@ cap.set(4,480)
 
 while True:
     success, img = cap.read()
-    cv2.imshow("Video",img)
-    print("chk1")
-    if cv2.waitKey(500) & 0xFF==ord('q'):
-        print("CHK2")
+    cv2.imshow("LiveWebCamera",img)
+     
+    if cv2.waitKey(1) & 0xFF==ord('q'):
+     
         break
